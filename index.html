@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== 基础 meta / SEO / 分享卡 ===== -->
+  <title>唐代喆 Jay · 现实派理想主义者 / 白日梦的实践者</title>
+  <meta name="description" content="唐代喆 Jay —— 现实派理想主义者 · 白日梦的实践者 · 高中生青年创业者 · AI 时代原住民。深圳（南山）中加学校高三。个人作品集与简历。" />
+  <meta name="author" content="唐代喆 Jay" />
+  <meta name="theme-color" content="#1F4D3A" />
+
+  <!-- Open Graph / 微信、社交平台分享预览 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="唐代喆 Jay · 白日梦的实践者" />
+  <meta property="og:description" content="现实派理想主义者 · 高中生青年创业者 · AI 时代原住民。" />
+  <meta property="og:image" content="assets/img/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- 内联 SVG favicon（无需外部文件、离线可用） -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F4D3A'/%3E%3Ctext x='50%25' y='52%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='36' font-weight='700' fill='%23F6F4EE'%3E唐%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- 无 JS 兜底：禁用 JS 时也能看到全部内容（取消进场动画的初始隐藏） -->
+  <noscript>
+    <style>.reveal{opacity:1!important;transform:none!important;}</style>
+  </noscript>
+</head>
+
+<body>
+  <!-- 顶部滚动进度条（打印时隐藏） -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ============ 导航（打印时隐藏） ============ -->
+  <header class="nav print-hide">
+    <a class="nav__brand" href="#top" aria-label="回到顶部">
+      唐代喆 <span class="nav__brand-en">Jay</span>
+    </a>
+    <nav class="nav__links" aria-label="章节导航">
+      <a href="#who">我是谁</a>
+      <a href="#work">作品</a>
+      <a href="#next">在做</a>
+      <a href="#awards">奖项</a>
+    </nav>
+    <button class="nav__print" id="printBtn" type="button">
+      导出 PDF<span class="nav__print-en"> / PDF</span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ ① HERO ============ -->
+    <section class="hero" id="hero">
+      <!-- 背景巨型水印：白日梦 / DAYDREAM -->
+      <div class="hero__watermark" aria-hidden="true">
+        <span class="hero__watermark-en">DAYDREAM</span>
+      </div>
+
+      <div class="wrap hero__inner reveal">
+        <p class="hero__eyebrow">个人作品集 <span>/ PORTFOLIO</span></p>
+
+        <h1 class="hero__name">
+          唐代喆<span class="hero__name-en">Jay</span>
+        </h1>
+
+        <p class="hero__tags">
+          现实派理想主义者 <i>·</i>
+          <span class="glow">白日梦</span>的实践者 <i>·</i>
+          <span class="hl">高中生青年创业者</span> <i>·</i>
+          <span class="hl">AI 时代原住民</span> <i>·</i>
+          偏 <span class="hl">β</span> 型领导者
+        </p>
+
+        <p class="hero__meta">
+          深圳（南山）中加学校 <i>·</i> 高三 <i>·</i>
+          GitHub：<a href="https://github.com/daydream-engine" target="_blank" rel="noopener">daydream-engine</a>
+        </p>
+      </div>
+
+      <a class="hero__scroll print-hide" href="#who" aria-label="向下滚动">
+        <span>下滑</span><span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ============ ② 我是谁（全站重心） ============ -->
+    <section class="section section--who" id="who">
+      <div class="wrap">
+        <p class="eyebrow reveal">02 — 我是谁 <span>/ WHO I AM</span></p>
+
+        <ol class="who" role="list">
+          <li class="who__item reveal">
+            <span class="who__num">01</span>
+            <div class="who__body">
+              <h2 class="who__title">我把做白日梦当本事。</h2>
+              <p class="who__desc">我做过的每件真东西,最早都只是脑子里一个不太正经的念头。我想亲手把“做白日梦”从一个有点丢人的词,做成一个值得骄傲的词。</p>
+            </div>
+          </li>
+
+          <li class="who__item reveal">
+            <span class="who__num">02</span>
+            <div class="who__body">
+              <h2 class="who__title">我是现实派的理想主义者。</h2>
+              <p class="who__desc">空想我太熟了——初中那几年我只会空想。所以我现在做梦,也认账去一锤一锤把它砸出来。不落地的理想,只是漂亮的废话。</p>
+            </div>
+          </li>
+
+          <li class="who__item reveal">
+            <span class="who__num">03</span>
+            <div class="who__body">
+              <h2 class="who__title">AI 我用到了骨子里,而且已经在创业。</h2>
+              <p class="who__desc">ChatGPT 刚出来我就在用,国内最早一批。现在我带队、也单干,用 AI 几天就能把一个想法做成能跑的产品。说白了,我已经是个高中生创业者了。</p>
+            </div>
+          </li>
+
+          <li class="who__item reveal">
+            <span class="who__num">04</span>
+            <div class="who__body">
+              <h2 class="who__title">我做东西,讲“双效”。</h2>
+              <p class="who__desc">社会效益和经济效益,得两头都占——这把尺子是我从小在 AIIES 学的。加上在 Round Square 这些国际场合练出来的眼界,我想做的,从来不只是能赚钱的东西,是对世界也有用的东西。</p>
+            </div>
+          </li>
+        </ol>
+
+        <!-- 小字附注 -->
+        <p class="who__note reveal">还有两个我自己挺认的标签:AI 时代的原住民——这波 AI 我不是追上来的,是泡在里面长大的;偏 β 型的领导者——α/β 是《敏捷领导力》里新旧两种领导力的分法(α 发号施令,β 靠赋能协作),我是两者的结合,但心里更想做那个 β。</p>
+      </div>
+    </section>
+
+    <!-- ============ ③ 我做出来的东西 ============ -->
+    <section class="section section--work" id="work">
+      <div class="wrap">
+        <p class="eyebrow reveal">03 — 我做出来的东西 <span>/ WHAT I'VE BUILT</span></p>
+
+        <!-- 树成林（featured 大卡片） -->
+        <article class="project project--featured reveal">
+          <div class="project__media">
+            <figure class="project__photo">
+              <img src="assets/img/hackathon-champion.jpg"
+                   alt="树成林 × 生财有术 百人黑客松 全场总冠军合照"
+                   loading="lazy" decoding="async" width="1920" height="1280" />
+              <figcaption class="badge">
+                <span class="badge__num">¥8000</span>
+                <span class="badge__sub">全场总冠军 6000 + 最佳商业奖 2000</span>
+              </figcaption>
+            </figure>
+
+            <figure class="project__video">
+              <video class="js-autoplay" poster="assets/video/magic-net-agent-poster.jpg"
+                     muted loop playsinline preload="none"
+                     aria-label="产品演示：平铺衣服图一键生成模特商品图">
+                <source src="assets/video/magic-net-agent-demo.mp4" type="video/mp4" />
+              </video>
+              <figcaption class="project__video-cap">产品演示 <span>/ Product demo</span></figcaption>
+            </figure>
+          </div>
+
+          <div class="project__text">
+            <h2 class="project__title">树成林 × 生财有术 百人黑客松 · 全场总冠军 + 最佳商业奖（合计 ¥8000）</h2>
+            <p class="project__desc">我做队长,从零带队。我们做了个给中小服装厂家的 AI 出图平台:商家传一张平铺的衣服图、选几个场景,就能一键生成能跟大牌比的模特商品图,把请模特、租场地那笔成本压到最低。比拿奖更带劲的是,赛后我们跑通了几单真实成交,项目到现在还在做。</p>
+          </div>
+        </article>
+
+        <!-- PetTI -->
+        <article class="project project--petti reveal">
+          <div class="project__text">
+            <h2 class="project__title">
+              PetTI <span class="project__tag">独立开发 / SOLO</span>
+            </h2>
+            <p class="project__desc">我一个人做的,给宠物测 MBTI、测性格。MBTI 满世界都是,全是给人测的,没人正经给宠物做过——这块空地我盯上了。网站基础版我自己搭好了,正慢慢往市场推。</p>
+          </div>
+          <div class="project__mark" aria-hidden="true">
+            <span>Pet</span><span class="accent">TI</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ④ 我正在做的 ============ -->
+    <section class="section section--next" id="next">
+      <div class="wrap">
+        <p class="eyebrow reveal">04 — 我正在做的 <span>/ WHAT'S NEXT</span></p>
+        <blockquote class="next__quote reveal">
+          <p>我手上排着的下一个,比前面这些都大:我赌这个时代最贵的东西是注意力,而 AI 和算法正在你反应过来之前就把它偷走。我想做一个替我们这代人把注意力夺回来的产品。为了做它,我在补认知科学的底子——自学脑科学、认知心理学,啃一本叫《弹性》(Elastic)的书,研究“思维弹性到底是天赋,还是能练出来的肌肉”。我赌是后者,而且拿自己当样本在验证。</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ ⑤ 我手上的牌（奖项） ============ -->
+    <section class="section section--awards" id="awards">
+      <div class="wrap">
+        <p class="eyebrow reveal">05 — 我手上的牌 <span>/ CREDENTIALS</span></p>
+        <p class="awards__hint print-hide reveal">点击任意奖项可查看证书原图 <span>· 键盘 Esc 关闭、← → 翻页</span></p>
+
+        <!-- 领导力 -->
+        <div class="awards__group reveal">
+          <h3 class="awards__cat">领导力 <span>/ LEADERSHIP</span></h3>
+          <ul class="awards__grid" role="list">
+            <li>
+              <button class="award" type="button"
+                data-images='["assets/img/certs/cert-01-vicechair-2025.jpg","assets/img/certs/cert-02-vicechair-2024.jpg"]'
+                data-caption="学生发展委员会 主席团 副主席(连任两届)　2024–2025">
+                <span class="award__text">
+                  <span class="award__name">学生发展委员会 主席团 副主席(连任两届)</span>
+                  <span class="award__year">2024–2025</span>
+                </span>
+                <img class="award__thumb" src="assets/img/certs/cert-01-vicechair-2025-thumb.jpg"
+                     alt="聘书：学生发展委员会主席团副主席（2025）" loading="lazy" decoding="async" width="760" height="531" />
+                <span class="award__count">2 张</span>
+              </button>
+            </li>
+            <li>
+              <button class="award" type="button"
+                data-images='["assets/img/certs/cert-07-public-policy.jpg"]'
+                data-caption="特等奖 · 最佳改进公共政策方案策划与实践奖(项目《行旅和合·武乡出租车交通改进》,第十五届中学生领导力展示会)　2024">
+                <span class="award__text">
+                  <span class="award__name">特等奖 · 最佳改进公共政策方案策划与实践奖(项目《行旅和合·武乡出租车交通改进》,第十五届中学生领导力展示会)</span>
+                  <span class="award__year">2024</span>
+                </span>
+                <img class="award__thumb" src="assets/img/certs/cert-07-public-policy-thumb.jpg"
+                     alt="荣誉证书：最佳改进公共政策方案策划与实践奖" loading="lazy" decoding="async" width="760" height="529" />
+              </button>
+            </li>
+            <li>
+              <button class="award" type="button"
+                data-images='["assets/img/certs/cert-06-leadership-star.jpg"]'
+                data-caption="年度中学生领导力之星 提名奖　2024">
+                <span class="award__text">
+                  <span class="award__name">年度中学生领导力之星 提名奖</span>
+                  <span class="award__year">2024</span>
+                </span>
+                <img class="award__thumb" src="assets/img/certs/cert-06-leadership-star-thumb.jpg"
+                     alt="荣誉证书：年度中学生领导力之星提名奖" loading="lazy" decoding="async" width="760" height="520" />
+              </button>
+            </li>
+            <li>
+              <button class="award" type="button"
+                data-images='["assets/img/certs/cert-08-excellent-leader.jpg"]'
+                data-caption="校级优秀学生干部　2024–2025">
+                <span class="award__text">
+                  <span class="award__name">校级优秀学生干部</span>
+                  <span class="award__year">2024–2025</span>
+                </span>
+                <img class="award__thumb" src="assets/img/certs/cert-08-excellent-leader-thumb.jpg"
+                     alt="Certificate of Honour：校级优秀学生干部" loading="lazy" decoding="async" width="760" height="529" />
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 国际 -->
+        <div class="awards__group reveal">
+          <h3 class="awards__cat">国际 <span>/ GLOBAL</span></h3>
+          <ul class="awards__grid" role="list">
+            <li>
+              <button class="award" type="button"
+                data-images='["assets/img/certs/cert-04-roundsquare-global.jpg"]'
+                data-caption="Round Square 全球大会 杰出贡献(学生领袖)　2024">
+                <span class="award__text">
+                  <span class="award__name">Round Square 全球大会 杰出贡献(学生领袖)</span>
+                  <span class="award__year">2024</span>
+                </span>
+                <img class="award__thumb" src="assets/img/certs/cert-04-roundsquare-global-thumb.jpg"
+                     alt="Certificate of Honour：Round Square Global Conference 杰出贡献" loading="lazy" decoding="async" width="760" height="528" />
+              </button>
+            </li>
+            <li>
+              <button class="award" type="button"
+                data-images='["assets/img/certs/cert-05-roundsquare-contribution.jpg"]'
+                data-caption="Round Square 圆方贡献奖　2024–2025">
+                <span class="award__text">
+                  <span class="award__name">Round Square 圆方贡献奖</span>
+                  <span class="award__year">2024–2025</span>
+                </span>
+                <img class="award__thumb" src="assets/img/certs/cert-05-roundsquare-contribution-thumb.jpg"
+                     alt="Certificate of Honour：Round Square 圆方贡献奖" loading="lazy" decoding="async" width="760" height="529" />
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 学术 / 商业 -->
+        <div class="awards__group reveal">
+          <h3 class="awards__cat">学术 / 商业 <span>/ ACADEMIC &amp; BUSINESS</span></h3>
+          <ul class="awards__grid" role="list">
+            <li>
+              <button class="award" type="button"
+                data-images='["assets/img/certs/cert-11-bpho-bronze.jpg"]'
+                data-caption="英国物理奥赛 BPhO 铜奖　2025.01">
+                <span class="award__text">
+                  <span class="award__name">英国物理奥赛 BPhO 铜奖</span>
+                  <span class="award__year">2025.01</span>
+                </span>
+                <img class="award__thumb award__thumb--portrait" src="assets/img/certs/cert-11-bpho-bronze-thumb.jpg"
+                     alt="BPhO British Physics Olympiad Bronze Award" loading="lazy" decoding="async" width="559" height="760" />
+              </button>
+            </li>
+            <li>
+              <button class="award" type="button"
+                data-images='["assets/img/certs/cert-09-bochuang-merit.jpg","assets/img/certs/cert-10-bochuang-first.jpg"]'
+                data-caption="第十一届珠三角创新商业峰会 暨 第十七届“博创杯”国际峰会选拔赛 一等奖　2025">
+                <span class="award__text">
+                  <span class="award__name">第十一届珠三角创新商业峰会 暨 第十七届“博创杯”国际峰会选拔赛 一等奖</span>
+                  <span class="award__year">2025</span>
+                </span>
+                <img class="award__thumb" src="assets/img/certs/cert-09-bochuang-merit-thumb.jpg"
+                     alt="Certificate of merit：珠三角创新商业峰会 / 博创杯 一等奖" loading="lazy" decoding="async" width="760" height="528" />
+                <span class="award__count">2 张</span>
+              </button>
+            </li>
+            <li>
+              <button class="award" type="button"
+                data-images='["assets/img/certs/cert-12-money-you.jpg"]'
+                data-caption="Money &amp; You 商业研习 结业　2025.08">
+                <span class="award__text">
+                  <span class="award__name">Money &amp; You 商业研习 结业</span>
+                  <span class="award__year">2025.08</span>
+                </span>
+                <img class="award__thumb" src="assets/img/certs/cert-12-money-you-thumb.jpg"
+                     alt="Money &amp; You Certificate of Achievement 结业证书" loading="lazy" decoding="async" width="760" height="528" />
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 公益 -->
+        <div class="awards__group reveal">
+          <h3 class="awards__cat">公益 <span>/ IMPACT</span></h3>
+          <ul class="awards__grid" role="list">
+            <li>
+              <button class="award" type="button"
+                data-images='["assets/img/certs/cert-03-aiies.jpg"]'
+                data-caption="AIIES 国际艺智教育公益「投资双效,创造未来」执行常委 · 2025 起接任执行长　2025.04–2026.10">
+                <span class="award__text">
+                  <span class="award__name">AIIES 国际艺智教育公益「投资双效,创造未来」执行常委 · 2025 起接任执行长</span>
+                  <span class="award__year">2025.04–2026.10</span>
+                </span>
+                <img class="award__thumb" src="assets/img/certs/cert-03-aiies-thumb.jpg"
+                     alt="聘书：AIIES 国际艺智教育公益 执行常委" loading="lazy" decoding="async" width="760" height="524" />
+              </button>
+            </li>
+            <li>
+              <button class="award" type="button"
+                data-images='["assets/img/certs/cert-13-aijia.jpg"]'
+                data-caption="爱家飞侠 传播大使(环保 / 低碳)">
+                <span class="award__text">
+                  <span class="award__name">爱家飞侠 传播大使(环保 / 低碳)</span>
+                  <span class="award__year"></span>
+                </span>
+                <img class="award__thumb award__thumb--portrait" src="assets/img/certs/cert-13-aijia-thumb.jpg"
+                     alt="爱家飞侠 传播大使 证书" loading="lazy" decoding="async" width="565" height="760" />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ⑥ 收尾 ============ -->
+    <section class="section section--closing" id="closing">
+      <div class="wrap reveal">
+        <p class="closing__zh">我不是谁的简历,我是一个还在不断改写自己的人。</p>
+        <p class="closing__en">Nothing is impossible. If it is, that only proves you used the wrong method.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 页脚 ============ -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span class="footer__name">唐代喆 · Jay</span>
+      <span class="footer__links">
+        <a href="https://github.com/daydream-engine" target="_blank" rel="noopener">GitHub / daydream-engine</a>
+        <button class="footer__print print-hide" id="printBtn2" type="button">导出 PDF 简历</button>
+      </span>
+    </div>
+  </footer>
+
+  <!-- ============ 证书 Lightbox（灯箱） ============ -->
+  <div class="lightbox print-hide" id="lightbox" role="dialog" aria-modal="true" aria-label="证书查看" hidden>
+    <button class="lightbox__close" id="lbClose" type="button" aria-label="关闭（Esc）">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" type="button" aria-label="上一张（←）">&#8249;</button>
+    <figure class="lightbox__figure">
+      <img id="lbImg" src="" alt="" />
+      <figcaption id="lbCap" class="lightbox__cap"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" type="button" aria-label="下一张（→）">&#8250;</button>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
